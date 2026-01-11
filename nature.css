@@ -1,0 +1,474 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  margin: 5px;
+  height: 100%; /* высота 100% от родительского элемента */
+  display: flex;
+  flex-direction: column; /* все контейнеры идут вертикально */
+  font-weight: normal; /* толщина шрифтов*/
+  font-size: 20px;
+  line-height: 1em;
+  color: #3d3d3d;
+  background: rgb(230, 255, 223);
+}
+main {
+  margin-bottom: 40px;
+}
+/* Стили для тегов */
+a {
+  text-decoration: none;
+  color: #3d3d3d;
+}
+
+/* =============================== */
+/* Панель навигации */
+.container_nav {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+/* Наша работа Сообщество  О нас */
+
+.list {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  font-family: "Kulim Park";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  margin: 2px 10px;
+  padding: 2px 10px;
+}
+
+/* Логотип панда с надписью */
+.center {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 150px;
+}
+figcaption {
+  font-size: 14px;
+  text-align: center;
+}
+/* Начать помогать - кнопка */
+.right {
+  margin: 2px 10px;
+  padding: 7px 20px;
+  border: 1px solid rgba(102, 102, 102, 1);
+  border-radius: 30px;
+}
+/* section */
+section {
+  margin-bottom: 40px;
+}
+
+/* ==== Сурки с кнопкой Помощь ==== */
+.image-container {
+  /* Для позиционирования кнопки */
+  position: relative;
+  height: 700px;
+  /* Добавляем картинку как фон */
+  background-image: url("images/Картинка_сурков.png");
+  background-size: cover; /* Меняем для  дисплеев */
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 2em;
+}
+/* Позиция на 
+ фоновой картинке */
+.help_centered {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 75%; /* менять под экраны*/
+  left: 48%; /* менять под экраны*/
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 120px; /* менять под экраны*/
+  height: 120px; /* менять под экраны*/
+
+  /* Ободок вокруг кнопки */
+}
+.help_button {
+  display: flex;
+  align-items: center;
+}
+/* Стиль кружка с кнопкой */
+.help a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px; /* менять под экраны*/
+  height: 100px; /* менять под экраны*/
+  border: 1px transparent;
+  border-radius: 50%;
+  background-color: white;
+  font-family: "Kulim Park";
+  font-weight: 400;
+  font-size: 22px; /* менять под экраны*/
+  color: rgba(191, 99, 47, 1);
+}
+.help a:hover {
+  text-shadow: 2px 2px 4px chocolate;
+  font-weight: 800;
+  font-size: 23px;
+}
+/* === Save nature texts ===== */
+.save_nature {
+  position: absolute;
+  top: 0;
+  left: 2%; /* Меняем для  дисплеев */
+  width: 70%;
+  font-family: Kulim Park;
+  font-weight: 600;
+  font-size: 100px;
+  line-height: 100%;
+  color: white;
+}
+.save_animal {
+  position: absolute;
+  top: 15%;
+  left: 70%;
+  width: 30%;
+  margin-right: 15px;
+  font-family: "Kulim Park";
+  font-weight: 275;
+  font-size: 20px;
+  line-height: 100%;
+  color: white;
+}
+.section1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 40px; /* Меняем для  дисплеев */
+}
+
+/* ===== Лев и тексты ===== */
+.leo {
+  width: auto;
+}
+.container_our_mission {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  justify-content: space-between;
+}
+.our_mission,
+.text_1 {
+  font-family: "Kulim Park";
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 100%;
+  color: #3e3e3e;
+}
+.text_1 {
+  font-size: 20px;
+}
+.begin_help {
+  color: #3e3e3e;
+  background: #bc5e28;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 1em;
+}
+/* ======== информационный блок ======= */
+.info {
+  width: 40%;
+  height: auto;
+  margin: 40px auto;
+  text-align: center;
+}
+.info p:first-child {
+  font-family: "Kulim Park";
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 100%;
+}
+
+/* ========== section 4 ========= */
+.block3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+/* контейнер дельфин жираф*/
+.two_pic {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 24rem;
+  height: 35rem;
+}
+.pic2 {
+  position: relative;
+  top: 50px;
+  left: 150px;
+}
+/* контейнер текстового блока */
+.container_our_mission_2 {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  justify-content: start;
+  align-items: center;
+}
+.info_1 {
+  font-family: "Kulim Park";
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 100%;
+  margin-bottom: 20px;
+}
+
+.text_2 {
+  width: 70%;
+  text-align: left;
+  padding-bottom: 40px;
+}
+
+.list2 {
+  width: 90%;
+}
+.text_3_arrow {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  font-family: "Kulim Park";
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 100%;
+}
+/* ======== Elephant ==========*/
+.image-container_1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/Rectangle\ 7.png");
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 2em;
+  color: white;
+  margin-bottom: 3em;
+}
+.text_4 {
+  text-align: center;
+  width: 80%;
+  margin-bottom: 2em;
+}
+.white {
+  color: white;
+  margin-bottom: 2em;
+}
+.want {
+  padding: 4px 15px;
+  border: 2px solid;
+  border-radius: 30px;
+}
+/* ======= Секция ссылок ======= */
+.links {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 14px;
+  line-height: 2em;
+  color: rgba(62, 62, 62, 1);
+}
+.head {
+  font-family: "Kulim Park";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 100%;
+  margin-bottom: 0.5em;
+}
+
+/* --------------------------------- */
+.write_news {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  color: rgba(62, 62, 62, 1);
+}
+.address {
+  font-size: 12px;
+}
+.text_size_for_form {
+  display: flex;
+  align-items: center;
+  font-size: 8px;
+  align-items: center;
+  gap: 5px;
+}
+.vk_tg {
+  padding: 10px 0;
+}
+.social {
+  padding: 2px 20px;
+  border: 1px solid #888888;
+  border-radius: 30px;
+  font-size: 20px;
+}
+/* ======== Подвал ============= */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: end;
+  margin: 0 40px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 100%;
+  margin-bottom: 20px;
+}
+.container_panda_footer {
+  position: relative;
+}
+h2 {
+  text-align: center;
+  font-family: "Kulim Park";
+  font-weight: 700;
+  font-size: 23px;
+  padding-bottom: 15px;
+}
+.copy {
+  position: absolute;
+  left: 75px;
+  top: 85px;
+}
+.pad_bot {
+  padding-bottom: 15px;
+  width: 40%;
+}
+/* ======= Медиа запросы ======== */
+@media (max-width: 1280px) {
+  .save_nature {
+    font-size: 80px;
+  }
+  .section1 {
+    margin: 0 20px;
+  }
+}
+
+/* ========== 768 1024 ========= */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .save_nature {
+    font-size: 70px;
+    width: 50%;
+  }
+  .help_centered {
+    left: 45%; /* менять под экраны*/
+  }
+  .section1 {
+    justify-content: center;
+  }
+  .container_our_mission {
+    width: 80%;
+    gap: 30px;
+  }
+  .container_our_mission_2 {
+    width: 100%;
+  }
+}
+/* ============= 480 - 767 ======== */
+@media (min-width: 480px) and (max-width: 767px) {
+  .center {
+    left: 80%;
+  }
+  .container_nav {
+    flex-direction: column;
+    height: 80px;
+    align-items: start;
+  }
+  .help_centered {
+    left: 43%;
+  }
+
+  .save_nature {
+    font-size: 60px;
+    width: 50%;
+  }
+  .section1 {
+    justify-content: center;
+  }
+  .container_our_mission {
+    width: 90%;
+    gap: 30px;
+  }
+
+  .info p:first-child,
+  .info_1 {
+    font-size: 36px;
+  }
+  .container_our_mission_2 {
+    width: 100%;
+  }
+  .want {
+    font-size: 16px;
+  }
+  footer {
+  flex-direction: column;
+  align-items: center;
+  }
+  .pad_bot {
+  width: 100%;
+  }
+}
+
+/* ======== 360 - 479 ============ */
+@media (min-width: 360px) and (max-width: 479px) {
+  .center {
+    left: 85%;
+  }
+  .container_nav {
+    flex-direction: column;
+    height: 80px;
+    align-items: start;
+  }
+  .help_centered {
+    left: 37%; /* менять под экраны*/
+  }
+  .save_nature {
+    font-size: 40px;
+    width: 50%;
+  }
+  .section1 {
+    justify-content: center;
+  }
+  .container_our_mission {
+    width: 95%;
+    gap: 30px;
+  }
+  .info p:first-child,
+  .info_1 {
+    font-size: 24px;
+  }
+  .container_our_mission_2 {
+    width: 100%;
+  }
+  .want {
+    font-size: 14px;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pad_bot {
+    width: 100%;
+  }
+}
